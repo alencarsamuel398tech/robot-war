@@ -1,0 +1,8 @@
+.env
+.env.*
+*.key
+*.pem
+.DS_Store
+__pycache__/
+.mcp.json
+experiments/transcripts/

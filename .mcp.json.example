@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "robotwar": { "type": "http", "url": "https://robot.voitta.ai/mcp" }
+  }
+}
