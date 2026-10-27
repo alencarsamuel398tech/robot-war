@@ -1,8 +1,21 @@
 {
-  "sandbox": { "enabled": true },
+  "sandbox": {
+    "enabled": true,
+    "network": {
+      "allowedDomains": [
+        "robot.voitta.ai",
+        "api.anthropic.com",
+        "github.com",
+        "pypi.org",
+        "files.pythonhosted.org"
+      ]
+    }
+  },
   "permissions": {
     "defaultMode": "default",
     "deny": [
+      "WebFetch",
+      "WebSearch",
       "Read(//Users/samuellimaalencar/axenya-vault/**)",
       "Read(//Users/samuellimaalencar/.ssh/**)",
       "Read(//Users/samuellimaalencar/.config/gh/**)",
@@ -10,6 +23,7 @@
       "Read(//Users/samuellimaalencar/.claude/**)",
       "Read(//Users/samuellimaalencar/.aws/**)",
       "Read(//Users/samuellimaalencar/.config/gcloud/**)",
+      "Read(~/.claude/.credentials.json)",
       "Read(**/.env*)",
       "Bash(curl:*)",
       "Bash(wget:*)",

@@ -15,6 +15,10 @@ Estudo pessoal de AI Engineering: bots Python para o [Voitta Robot War](https://
 3. API key fora do git (`.env` ignorado). Nunca colar no chat.
 4. Push e `gh` sempre pedem confirmação.
 5. Conta GitHub ativa tem que ser a pessoal (o launcher confere).
+6. Onde roda: só no GitHub Codespaces (`.devcontainer/`), nunca no Mac. Abrir pelo navegador, nunca pelo VS Code desktop nem `gh codespace ssh -A`.
+7. Rede do sandbox só para robot.voitta.ai, Anthropic, GitHub e PyPI. WebFetch/WebSearch negados.
+8. Codespace: sem Settings Sync, sem repo de dotfiles, porta nunca pública, idle 30 min, retenção 1 dia.
+9. Secret de Codespaces só a key do Robot War, com acesso só a este repo.
 
 ## Como começar
 
